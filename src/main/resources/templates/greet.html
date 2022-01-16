@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<title>안녕하세요</title>
+</head>
+<body>
+	<p th:text='${"지금은 " + now + "입니다."}'></p>
+	<p th:text='${"이 프로그램의 이름은 " + data.programName + "입니다."}'></p>
+	<p th:text='${"이 프로그램을 만든 사람은 " + data.author + "입니다."}'></p>
+	<p th:text="${data.greetMessage + '!'}"></p>
+</body>
+</html>
